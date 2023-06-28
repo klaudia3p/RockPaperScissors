@@ -11,16 +11,17 @@ namespace RockPaperScissors
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Welcome to Rock, Paper, Scissors!");
+                Console.WriteLine("\n\n\n\t\t\tWelcome to Rock, Paper, Scissors!");
 
                 while (true)
                 {
-                    Console.WriteLine("Please enter your move (rock, paper, or scissors):");
-                    string playerMove = Console.ReadLine().ToLower();
+                    Console.WriteLine("\n\t\tPlease enter your move (rock, paper, or scissors):");
+                string playerMove = Console.ReadLine().ToLower();
 
-                    if (playerMove != "rock" && playerMove != "paper" && playerMove != "scissors")
+
+                if (playerMove != "rock" && playerMove != "paper" && playerMove != "scissors")
                     {
-                        Console.WriteLine("Invalid move. Please try again.");
+                        Console.WriteLine("\n\t\tInvalid move. Please try again.");
                         continue;
                     }
 
@@ -41,24 +42,24 @@ namespace RockPaperScissors
                         computerMove = "scissors";
                     }
 
-                    Console.WriteLine("Computer move: " + computerMove);
+                    Console.WriteLine("\n\t\t\tComputer move: " + computerMove);
 
                     if (playerMove == computerMove)
                     {
-                        Console.WriteLine("It's a tie!");
+                        Console.WriteLine("\n\t\tIt's a tie!");
                     }
                     else if (playerMove == "rock" && computerMove == "scissors" ||
                              playerMove == "paper" && computerMove == "rock" ||
                              playerMove == "scissors" && computerMove == "paper")
                     {
-                        Console.WriteLine("You win!");
+                        Console.WriteLine("\n\t\tYou win!");
                     }
                     else
                     {
-                        Console.WriteLine("Computer wins!");
+                        Console.WriteLine("\n\t\tComputer wins!");
                     }
 
-                    Console.WriteLine("Do you want to play again? (yes or no)");
+                    Console.WriteLine("\n\t\tDo you want to play again? (yes or no)");
                     string playAgain = Console.ReadLine().ToLower();
 
                     if (playAgain != "yes")
@@ -67,8 +68,9 @@ namespace RockPaperScissors
                     }
                 }
 
-                Console.WriteLine("Thanks for playing!");
-                Console.ReadKey();
+                Console.WriteLine("\n\n\t\t\tThanks for playing!");
+            Console.ReadKey();
+            Console.ReadKey();
             }
         }
     }
